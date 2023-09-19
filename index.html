@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="C:\Users\yashj\Desktop\Summer Internship Course\Portfolio Website\favicon.ico"> 
 </head>
 
 <body>
@@ -16,20 +18,20 @@
         <div id="theme">
             <img src="./Moon.png" id="icon">
         </div>
-        <div>
+        <div id="head">
             <a href="#intro">Home</a>
         </div>
-        <div>
-            <a href="#service">Services</a>
+        <div id="head">
+            <a href="#">Services</a>
         </div>
-        <div>
+        <div id="head">
             <a href="#">Portfolio</a>
         </div>
-        <div>
+        <div id="head">
             <a href="#">Education</a>
         </div>
         <div style="border: 2px solid #ff9500; border-radius: 20px; background-color: #ff9500;">
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
         </div>
     </div>
 
@@ -74,24 +76,23 @@
             </div>
         </div>
         <div id="photo">
-            <img src="./My.jpg" alt="">
+            <img src="./My.jpg" alt="My Photo">
         </div>
     </div>
 
-    <div class="service">
+    <div id="service">
         <h1 style="text-align: center;">My awesome</h1>
         <h1 style="text-align: center; font-size: 3.2rem; color: #ff9500;">services</h1>
         <div id="sample">
-            <div class="card">
+            <div class="card" data-aos="fade-right" data-aos-duration="1500">
                 <p style="font-size: 100px;">&#128516;</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facere.</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1500">
                 <p style="font-size: 100px;">&#128519;</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facere.</p>
-
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-left" data-aos-duration="1500">
                 <p style="font-size: 100px;">&#128526;</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita deserunt provident
                     dolorum, ea, magni quam obcaecati</p>
@@ -100,7 +101,7 @@
     </div>
 
     <div id="CV">
-        <a href="#">Download CV</a>
+        <a href="C:\Users\yashj\OneDrive\Desktop\Yash Jaiswal Resume (1).pdf">Download CV</a>
     </div>
 
     <div class="sentence">
@@ -134,7 +135,7 @@
 
     <h1 style="margin-top: 150px; text-align: center;">Get in Touch <span>Contact Me</span></h1>
 
-    <div class="contact-container">
+    <div class="contact-container" id="contact">
         <div class="contact-content">
             <div class="form-group">
                 <input type="text" id="name" name="name" placeholder="Enter your name">
@@ -154,6 +155,10 @@
         </div>
     </div>
 
+    <div>
+        
+    </div>
+
     <script>
         var icon = document.getElementById("icon")
         icon.onclick = function () {
@@ -165,6 +170,10 @@
                 icon.src = "./Moon.png";
             }
         }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+       AOS.init();
     </script>
 </body>
 
